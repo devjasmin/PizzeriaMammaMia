@@ -9,6 +9,29 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 5rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.nav-item {
+  font-size: 1rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.nav-item:hover {
+  color: red;
+}
+
 .title {
   margin: 0 0 1rem 0;
   font-size: 3rem;
@@ -16,12 +39,8 @@ body {
   font-family: "Lobster", cursive;
 }
 
-.titel span {
-  display: block;
-}
-
 .hero {
-  height: 100vh;
+  height: calc(100vh);
   font-size: 2rem;
   display: flex;
   flex-direction: column;
