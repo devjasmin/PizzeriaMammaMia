@@ -15,11 +15,11 @@ body {
   align-items: center;
   gap: 1rem;
   height: 5rem;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 .nav-item {
-  font-size: 1rem;
+  font-size: 0.7rem;
   padding: 1rem;
   color: #fff;
   background-color: transparent;
@@ -56,13 +56,13 @@ body {
 
 .slogan {
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #ddd;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .hero-action {
@@ -81,25 +81,21 @@ body {
   background-color: transparent;
 }
 
-@media only srceen and(min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .title {
     font-size: 4rem;
     line-height: 4rem;
-  }
 
-  .slogan {
-    font-size: 1.5rem;
-  }
-  .hero-action {
-    padding: 1.2rem 2.5rem;
-  }
-
-  .navbar {
-    height: 4rem;
+    .slogan {
+      font-size: 1.5rem;
+    }
+    .hero-action {
+      padding: 1.2rem 2.5rem;
+    }
   }
 }
 
-@media only srceen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .title {
     font-size: 6rem;
     line-height: 6.5rem;
