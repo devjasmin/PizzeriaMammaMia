@@ -7,6 +7,8 @@ body {
   background-color: #1a1a1a;
   color: #fff;
   font-family: "Inter", sans-serif;
+
+  --primary-color: #ff3030;
 }
 
 .navbar {
@@ -26,10 +28,11 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  transition: color 0.2s ease-in-out;
 }
 
 .nav-item:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 .title {
@@ -40,8 +43,7 @@ body {
 }
 
 .hero {
-  height: calc(100vh);
-  font-size: 2rem;
+  height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,35 +71,42 @@ body {
   font-size: 1rem;
   margin-top: 0.5rem;
   color: #fff;
-  background-color: #ff3030;
+  background-color: var(--primary-color);
   text-decoration: none;
-  border: 1px solid #ff3030;
+  border: 1px solid var(--primary-color);
   padding: 10px;
-  transition-duration: all 0.5 ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .hero-action:hover {
-  color: #ff3030;
+  color: var(--primary-color);
   background-color: transparent;
 }
 
 @media only screen and (min-width: 600px) {
+  .navbar {
+    gap: 2rem;
+    font-size: 1rem;
+  }
   .title {
     font-size: 4rem;
     line-height: 4rem;
-
-    .slogan {
-      font-size: 1.5rem;
-    }
-    .hero-action {
-      padding: 1.2rem 2.5rem;
-    }
+  }
+  .slogan {
+    font-size: 1.5rem;
+  }
+  .hero-action {
+    padding: 1.2rem 2.5rem;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  .title {
-    font-size: 6rem;
-    line-height: 6.5rem;
+  .navbar {
+    gap: 4rem;
+
+    .title {
+      font-size: 6rem;
+      line-height: 6.5rem;
+    }
   }
 }
