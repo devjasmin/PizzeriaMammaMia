@@ -83,6 +83,42 @@ body {
   background-color: transparent;
 }
 
+.heading {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-left: 2rem;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.about-text {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  margin-left: 2rem;
+  color: #fff;
+}
+
+.about-action {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.about-action:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
 @media only screen and (min-width: 600px) {
   .navbar {
     gap: 2rem;
