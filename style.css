@@ -9,6 +9,7 @@ body {
   font-family: "Inter", sans-serif;
 
   --primary-color: #ff3030;
+  --text-color: #ddd;
 }
 
 .navbar {
@@ -59,7 +60,7 @@ body {
 .slogan {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  color: #ddd;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,53 +69,50 @@ body {
 }
 
 .hero-action {
-  font-size: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 4rem;
+}
+
+.button {
   color: #fff;
   background-color: var(--primary-color);
   text-decoration: none;
   border: 1px solid var(--primary-color);
-  padding: 10px;
+  padding: 1rem 2rem;
   transition: color 0.2s ease-in-out;
 }
 
-.hero-action:hover {
+.button:hover {
   color: var(--primary-color);
   background-color: transparent;
 }
 
 .heading {
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  margin-left: 2rem;
-  color: #fff;
-  background-color: transparent;
-  text-decoration: none;
+  margin: 1rem 0 1rem 0.3rem;
+  text-decoration: underline var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  transition: color 0.2s ease-in-out;
+  width: fit-content;
 }
 
 .about-text {
   font-size: 0.8rem;
-  padding: 0.5rem;
-  margin-left: 2rem;
-  color: #fff;
+  color: var(--text-color);
+  margin-left: 0.3rem;
 }
 
-.about-action {
+.button {
+  display: inline-block;
   font-size: 1rem;
-  margin-top: 1.5rem;
-  margin-left: 3rem;
   color: #fff;
   background-color: var(--primary-color);
   text-decoration: none;
   border: 1px solid var(--primary-color);
   padding: 10px;
+  margin-left: 0.3rem;
   transition: color 0.2s ease-in-out;
 }
 
-.about-action:hover {
+.button:hover {
   color: var(--primary-color);
   background-color: transparent;
 }
@@ -131,7 +129,7 @@ body {
   .slogan {
     font-size: 1.5rem;
   }
-  .hero-action {
+  .button {
     padding: 1.2rem 2.5rem;
   }
 }
