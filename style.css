@@ -143,8 +143,8 @@ body {
   gap: 0.5rem;
 }
 
-.info-content {
-  margin-top: 6rem;
+.info-container {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,25 +156,23 @@ body {
   background-position: center;
   background-size: cover;
 }
-.opentimes {
-  margin: 2rem 0 1rem 0.3rem;
-  text-decoration: underline var(--primary-color);
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-}
-
-.table {
-  display: grid;
-}
-
-.Tage {
+.hours {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
-.Zeiten {
+.info .heading {
+  margin: 0 auto;
+}
+
+.hours-entry {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  width: 15rem;
 }
 
 @media only screen and (min-width: 600px) {
